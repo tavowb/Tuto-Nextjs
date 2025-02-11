@@ -23,6 +23,11 @@ const NavBar = () => {
           Tienda
         </Link>
       </li>
+      <li>
+        <Link href="/post">
+          Post
+        </Link>
+      </li>
     </ul>
   </nav></div>
   )
