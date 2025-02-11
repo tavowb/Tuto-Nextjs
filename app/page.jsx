@@ -1,5 +1,5 @@
 "use client"
-import Users from '../components/Users'
+import Users from '@/components/Users'
 import {useState} from 'react'
 
 export default function Homepage(){
