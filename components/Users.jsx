@@ -4,7 +4,7 @@ import {useEffect} from 'react'
 
 const Users = () => {
     useEffect(() => {
-      alert('cargado')
+      //alert('cargado')
     }, [])
     
 

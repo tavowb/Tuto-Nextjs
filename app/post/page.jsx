@@ -1,5 +1,5 @@
 import PostCard from '@/components/PostCard' // Usando alias
-
+import "./post.css"
 // Este es un RFC - React Server Component
 
 async function loadPosts() {
@@ -25,9 +25,8 @@ async function PostPage() {
     //8. Manejar errores    
 
   const posts = await loadPosts()
-  console.log(posts)
   return (
-    <div>
+    <div className='grid'>
         {posts.map(post => (
             <PostCard key={post.id} post={post}/>
         ))}
