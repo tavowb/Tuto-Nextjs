@@ -1,4 +1,4 @@
-import PostCard from '@/components/PostCard' // Usando alias
+import PostCard from '@/src/components/PostCard' // Usando alias
 import "./post.css"
 // Este es un RFC - React Server Component
 
@@ -14,23 +14,15 @@ async function loadPosts() {
 
 async function PostPage() {
 
-    //Pasos para hacer un fetch en React
-    //1. Importar useEffect
-    //2. Crear una función asincrona
-    //3. Llamar a la función asincrona en useEffect
-    //4. Hacer el fetch
-    //5. Convertir la respuesta a JSON
-    //6. Guardar la respuesta en un estado
-    //7. Mostrar la respuesta en el componente
-    //8. Manejar errores    
-
   const posts = await loadPosts()
   return (
-    <div className='grid'>
+    <div>
+        <h1 className='text-center pt-6  pb-0 font-bold'>Mis Post</h1>
+        <div className='grid'>
         {posts.map(post => (
             <PostCard key={post.id} post={post}/>
         ))}
-
+        </div>
     </div>
   )
 }
